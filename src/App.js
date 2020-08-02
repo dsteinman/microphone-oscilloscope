@@ -25,7 +25,7 @@ async function getMicrophones() {
     if (deviceInfo.kind === 'audioinput') {
       let id = deviceInfo.deviceId;
       let name = deviceInfo.label || 'microphone '+i;
-      if (i === 0 && name.toLowerCase().indexOf('default')>-1) continue;
+      // if (i === 0 && name.toLowerCase().indexOf('default')>-1) continue;
       mics.push({
         id,
         name
